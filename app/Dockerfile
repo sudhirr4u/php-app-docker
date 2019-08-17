@@ -5,6 +5,8 @@ FROM php:5.6-apache
 RUN docker-php-ext-install pdo mysql
 RUN docker-php-ext-install pdo mysqli
 
+COPY ./code/* /var/www/html
+
 # Workaround for write permission on write to MacOS X volumes
 # See https://github.com/boot2docker/boot2docker/pull/534
 RUN usermod -u 1000 www-data
