@@ -1,0 +1,3 @@
+to make the application workable, make sure the below packages should be installed properly before deployment.
+
+sudo yum install httpd24 php56 mysql56-server php56-mysqlnd
